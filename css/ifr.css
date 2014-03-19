@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* web font */
+@font-face {
+font-family:'NanumGothicBold';
+font-style:normal;
+font-weight:normal;
+src:url('NanumGothicBold.eot');
+src:local(※), url('NanumGothicBold.woff') format('woff'), url('NanumGothicBold.ttf') format('truetype')
+}
+
+@font-face {
+font-family:'GillSansLight';
+font-style:normal;
+font-weight:normal;
+src:url('GillSansLight.eot');
+src:local(※), url('GillSansLight.woff') format('woff'), url('GillSansLight.ttf') format('truetype')
+}
+
+/* common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-size:12px;font-family:'돋움',Dotum,'Apple SD Gothic Neo',AppleGothic,Helvetica,sans-serif}
+img,fieldset,button{border:0}
+button{border:0;cursor:pointer}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:underline}
+.blind{visibility:hidden;overflow:hidden;position:absolute;top:-1px;left:-1px;width:1px;height:1px;font-size:0;line-height:0}
+caption{display:none}
+body{ background: #fff}
+
+.wrap{ width:1180px; height:770px; overflow-x:hidden; overflow-y:auto;}
+.header{ position: relative; height:70px }
+.top_menu{ zoom:1; position: absolute; top:18px; right: 58px}
+.top_menu:after{ clear: both; content: ""; display: block}
+.top_menu li{ float: left; margin-left: 5px;}
+.top_menu li a{ overflow:hidden; display:inline-block; width:25px; height:24px; background: url(../img/sp_ico.gif) no-repeat}
+.top_menu li .sp_ico1{ background-position: 0 0}
+.top_menu li .sp_ico2{ background-position: -31px 0}
+.top_menu li .sp_ico3{ background-position: -61px 0}
+.top_menu li .sp_ico4{ background-position: -91px 0}
+.header .bt_close{ position: absolute; top:18px; right: 20px;}
+
+.u_gnb_area { position: relative; }
+.u_gnb_list {zoom:1; padding-left: 10px}
+.u_gnb_list:after{ clear: both; content: ""; display: block}
+.u_gnb_list li { float: left; width:220px; height:220px; margin:0 0 10px 10px; background:url(../img/bg_gnb.gif) no-repeat;}
+.u_gnb_list li .menu{}
+.u_gnb_list li .menu a{ display: block; width:215px; height:212px; color: #000; padding: 8px 0 0 5px; font-family: NanumGothicBold; line-height:16px; text-decoration: none}
+.u_gnb_list li .menu a:hover{ text-decoration: none}
+.u_gnb_list li .menu a span{ display: block; color: #1a1919; font-family: GillSansLight; font-size:36px; line-height:32px; margin-bottom: 7px}
+.u_gnb_list li .menu img{ margin: -8px 0 0 -5px; vertical-align: top}
+.u_gnb_list li.first{ position: relative; width: 450px; height: 450px; background:none}
+.u_gnb_list li.last{ background:url(../img/bg_gnb_more.gif) no-repeat;}
+
+.bx-wrapper { position: relative; margin: 0; padding: 0; *zoom: 1;}
+.bx-wrapper img { max-width: 100%; display: block; }
+.bx-wrapper a.bx-prev { left:10px; background:url(../img/bt_prev.png) no-repeat; }
+.bx-wrapper a.bx-next { right:10px; background:url(../img/bt_next.png) no-repeat; }
+.bx-wrapper .bx-controls-direction a { overflow:hidden; position:absolute; display:block; width:40px; height:40px; top:205px; text-indent: -9999px; z-index:50; }
