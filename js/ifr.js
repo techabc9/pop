@@ -9,7 +9,7 @@ $(document).ready(function(){
 	});
 	
 	$("#ly_close").click(function(e) {
-		$("#layer").stop(true,true).animate({left:1200}, function(){
+		$("#layer").stop(true,true).animate({left:'100%'}, function(){
 			_ly_slider.destroySlider();
 		});
 		e.preventDefault();
