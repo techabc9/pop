@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* web font */
+@font-face {
+font-family:'NanumGothicBold';
+font-style:normal;
+font-weight:normal;
+src:url('NanumGothicBold.eot');
+src:local(※), url('NanumGothicBold.woff') format('woff'), url('NanumGothicBold.ttf') format('truetype')
+}
+
+@font-face {
+font-family:'GillSansLight';
+font-style:normal;
+font-weight:normal;
+src:url('GillSansLight.eot');
+src:local(※), url('GillSansLight.woff') format('woff'), url('GillSansLight.ttf') format('truetype')
+}
+
+/* common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-size:12px;line-height:18px;font-family:NanumGothicBold,'돋움',Dotum,'Apple SD Gothic Neo',AppleGothic,Helvetica,sans-serif}
+img,fieldset,button{border:0}
+button{border:0;cursor:pointer}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:underline}
+.blind{visibility:hidden;overflow:hidden;position:absolute;top:-1px;left:-1px;width:1px;height:1px;font-size:0;line-height:0}
+caption{display:none}
+.ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis}
+.break{word-break:break-all;word-wrap:break-word;}
+body{ background: #fff}
