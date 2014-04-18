@@ -54,6 +54,8 @@ body{ background: #fff}
 .u_gnb_list li .menu a{ position:relative; display: block; width:220px; height:217px; margin:0 auto; text-decoration: none; border-top:2px solid #000; border-bottom:1px solid #000; background:url(../img/trans.gif) repeat}
 .u_gnb_list li .menu a:hover{ text-decoration: none;}
 .u_gnb_list li .menu a .tit{ position:absolute; top:8px; left:5px; color: #1a1919; font-family: GillSansLight; font-size:36px; line-height:32px;}
+.u_gnb_list li .menu_ty2 a .tit{ display:none}
+.u_gnb_list li .menu_ty2 a:hover .tit{ display:block;}
 .u_gnb_list li .menu img{vertical-align: top; margin:-2px 0 -1px}
 .u_gnb_list li .ico{ position: absolute; display: block; right:5px; bottom:11px; width: 15px; height: 15px; background:url(../img/ico_plus.png) no-repeat }
 .u_gnb_list li .menu .over{position:absolute; display:none; left:0;top:-2px;width:100%;height:220px;background:#fff;opacity:0.5;filter:alpha(opacity=50);z-index:100}
