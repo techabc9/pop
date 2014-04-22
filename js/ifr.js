@@ -24,6 +24,18 @@ $(document).ready(function(){
 		}
 	});
 	
+	if($('#gnb_slider .gnb_slide').length > 1){
+		$('#gnb_slider').bxSlider({
+			pager : false
+		});
+	}
+	else{
+		$('#gnb_slider .u_gnb_list .last').removeClass();
+	}
+	
+	
+	
+	
 });
 
 function set_slide(n){

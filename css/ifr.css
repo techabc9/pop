@@ -58,7 +58,7 @@ body{ background: #fff}
 .u_gnb_list li .menu_ty2 a:hover .tit{ display:block;}
 .u_gnb_list li .menu img{vertical-align: top; margin:-2px 0 -1px}
 .u_gnb_list li .ico{ position: absolute; display: block; right:5px; bottom:11px; width: 15px; height: 15px; background:url(../img/ico_plus.png) no-repeat }
-.u_gnb_list li .menu .over{position:absolute; display:none; left:0;top:-2px;width:100%;height:220px;background:#fff;opacity:0.5;filter:alpha(opacity=50);z-index:100}
+.u_gnb_list li .menu .over{position:absolute; display:none; left:0;top:-2px;width:100%;height:220px;background:#fff;opacity:0.5;filter:alpha(opacity=50);z-index:10}
 .u_gnb_list li .menu a:hover .over{ display:block}
 
 .u_gnb_list li.first{ position: relative; width:460px;}
@@ -69,13 +69,13 @@ body{ background: #fff}
 .u_gnb_list li.sns .txt{ display:block; overflow:hidden; color:#000; height:53px; word-break:break-all; word-wrap:break-word;}
 .u_gnb_list li.sns .ico_fb{background:url(../img/bg_facebook.gif) no-repeat; padding-left:33px}
 
-.u_gnb_list li.last .ico{ width:20px; height:27px; background:url(../img/ico_arr.png) no-repeat;}
+.u_gnb_list li.last .ico{ display:none; /* width:20px; height:27px; background:url(../img/ico_arr.png) no-repeat; */}
 
 .u_gnb_area .bx-wrapper { position: relative; margin: 0; padding: 0; *zoom: 1;}
 .u_gnb_area .bx-wrapper img { width:100%; max-width: 100%; display: block; }
-.u_gnb_area .bx-wrapper a.bx-prev { left:10px; background:url(../img/bt_prev.png) no-repeat; }
-.u_gnb_area .bx-wrapper a.bx-next { right:10px; background:url(../img/bt_next.png) no-repeat; }
-.u_gnb_area .bx-wrapper .bx-controls-direction a { overflow:hidden; position:absolute; display:block; width:40px; height:40px; top:205px; text-indent: -9999px; z-index:50; }
+.u_gnb_area .bx-wrapper a.bx-prev { display:none !important}
+.u_gnb_area .bx-wrapper a.bx-next { right:25px; background:url(../img/ico_arr.png) no-repeat; }
+.u_gnb_area .bx-wrapper .bx-controls-direction a { overflow:hidden; position:absolute; display:block; width:20px; height:27px; bottom:22px; text-indent: -9999px; z-index:50; }
 
 .u_gnb_area .bx-wrapper .bx-pager { text-align: center; font-size: .85em; font-family: Arial; font-weight: bold; color: #666; position: absolute; bottom:10px; left:0; width:100%; z-index: 60}
 .u_gnb_area .bx-wrapper .bx-pager .bx-pager-item{ display: inline-block;  *zoom: 1;*display: inline;}
