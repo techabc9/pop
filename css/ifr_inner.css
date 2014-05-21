@@ -1,15 +1,12 @@
 @charset "utf-8";
-/* CSS Document */
-
-/* web font */
+/* Font-Face */
 @font-face {
-font-family:'NanumGothicBold';
+font-family:'YDGothic';
 font-style:normal;
 font-weight:normal;
-src:url('NanumGothicBold.eot');
-src:local(※), url('NanumGothicBold.woff') format('woff'), url('NanumGothicBold.ttf') format('truetype')
+src:url('YDGothic.eot');
+src:local(※), url('YDGothic.woff') format('woff'), url('YDGothic.ttf') format('truetype')
 }
-
 @font-face {
 font-family:'GillSansLight';
 font-style:normal;
@@ -17,18 +14,20 @@ font-weight:normal;
 src:url('GillSansLight.eot');
 src:local(※), url('GillSansLight.woff') format('woff'), url('GillSansLight.ttf') format('truetype')
 }
-
-/* common */
-body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
-body,input,textarea,select,button,table{font-size:12px;line-height:18px;font-family:NanumGothicBold,'돋움',Dotum,'Apple SD Gothic Neo',AppleGothic,Helvetica,sans-serif}
-img,fieldset,button{border:0}
-button{border:0;cursor:pointer}
-ul,ol{list-style:none}
-em,address{font-style:normal}
-a{text-decoration:none}
-a:hover,a:active,a:focus{text-decoration:underline}
-.blind{visibility:hidden;overflow:hidden;position:absolute;top:-1px;left:-1px;width:1px;height:1px;font-size:0;line-height:0}
-caption{display:none}
+/* reset css */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button{margin:0;padding:0;}
+body,input,textarea,select,button,table{font-family:'돋움',Dotum,AppleGothic,sans-serif;font-size:12px;-webkit-text-size-adjust:none;}
+img,fieldset{border:0;}
+ul,ol{list-style:none;}
+em,address,var{font-style:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+legend,caption,.blind{overflow:hidden;visibility:hidden;position:absolute;top:0;left:0;z-index:-1;width:1px;height:1px;font-size:0;line-height:0}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
 .ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis}
 .break{word-break:break-all;word-wrap:break-word;}
-body{ background: #fff}
+.chk{vertical-align:middle;margin:-1px 0 1px}
+button{border:0;cursor:pointer}
+body{background:#fff}
+
+.scr_editor{ width:945px; padding-top:40px; font-family:'윤고딕',YDGothic;color:#5a4a3d;font-size:16px;line-height:20px;letter-spacing:-2px;}

@@ -2,7 +2,8 @@
 var _ly_slider;
 
 $(document).ready(function(){
-	$('#slider').bxSlider({
+	
+	$('#main_slider').bxSlider({
 		controls : false,
 		mode : 'fade',
 		auto : true
@@ -15,10 +16,12 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 	
-	$('#faqList > li').on('click', function(e) {
+	//FAQ
+	var $faqList = $('#faqList > li');
+	$faqList.on('click', function(e) {
 		if(e.type === 'click' && $(this).hasClass('on') == false){
-			$('#faqList > li').removeClass('on');
-			$('#faqList > li').find('dd').slideUp();
+			$faqList.removeClass('on');
+			$faqList.find('dd').slideUp();
 			$(this).addClass('on');
 			$(this).find('dd').slideDown();
 		}
@@ -30,7 +33,7 @@ $(document).ready(function(){
 		});
 	}
 	else{
-		$('#gnb_slider .u_gnb_list .last').removeClass();
+		$('#gnb_slider .main_div .last').removeClass();
 	}
 	
 	
@@ -47,4 +50,25 @@ function set_slide(n){
 			$("#layer").stop(true,true).animate({left:0});
 		}
 	});
+}
+
+function tab(s1,s2,t){
+	$(s1).hide();
+	$(s2).show();
+	$(t).parent().addClass('on');
+	$(t).parent().siblings().removeClass('on');
+}
+
+//input placeholder onblur="onBlur(this)" onfocus="onFocus(this)"
+function onBlur(el) {
+	if (el.value == '') {
+		el.value = el.defaultValue;
+		$(el).removeClass('focusin');
+	}
+}
+function onFocus(el) {
+	if (el.value == el.defaultValue) {
+		el.value = '';
+		$(el).addClass('focusin');
+	}
 }
