@@ -214,12 +214,18 @@ body{background:#fff}
 label.c_on{background: url(../img/sp_chk.gif) 0 -49px no-repeat;}
 label.r_on{background: url(../img/sp_radio.gif) 0 -50px no-repeat;}
 .label_radio span{margin-right:5px}
-.mail_wrap .send_text{padding-top:12px; width:242px; margin:0 auto}
+.mail_wrap .send_text{padding-top:12px;}
+.mail_wrap .send_text2{padding-top:12px; width:242px; margin:0 auto}
 .mail_wrap .send_text .inp{position:relative;margin-top:10px;}
 .mail_wrap .send_text .inp label{position:absolute;top:0;left:0;color:#b9b2ab;padding-left:5px;line-height:30px;display:none;}
 .mail_wrap .send_text .ip_txt{border:1px solid #B9B2AB;width:230px;height:30px;line-height:30px\9;padding:0 5px;color:#b9b2ab;font-family:'윤고딕',YDGothic;}
 .mail_wrap .send_text .ip_txt.focusin{color:#000}
 .mail_wrap .send_text .ip_textarea{border:1px solid #B9B2AB;width:713px;height:150px;padding:5px;font-family:'윤고딕',YDGothic;line-height:17px;color:#000}
-.mail_wrap .send_text .btn_area{padding-top:15px;}
-.mail_wrap .send_text .btn_send{background:#000; width:146px; height:50px; line-height:50px; text-align:center}
-.mail_wrap .send_text .btn_send span{font-family:'윤고딕',YDGothic; font-size:18px; letter-spacing:-2px; display:inline-block; padding:0; color:#fff}
+.mail_wrap .send_text .btn_area{margin-top:12px;}
+.mail_wrap .send_text .btn_send{background:url(../img/btn_send.gif) 0 0 no-repeat;width:100px;height:50px;}
+.mail_wrap .send_text2 .btn_area{padding-top:15px;}
+.mail_wrap .send_text2 .btn_ask{background:#000; width:146px; height:50px; line-height:50px; text-align:center}
+.mail_wrap .send_text2 .btn_ask span{font-family:'윤고딕',YDGothic; font-size:18px; letter-spacing:-2px; display:inline-block; padding:0; color:#fff}
+
+.ba_lst{overflow:hidden;width:760px; margin:30px auto 40px}
+.ba_lst li{ float:left}
