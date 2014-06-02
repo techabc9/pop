@@ -36,8 +36,14 @@ $(document).ready(function(){
 		$('#gnb_slider .main_div .last').removeClass();
 	}
 	
-	
-	
+	$( ".main_div > li" ).on("mouseenter", function() {
+		$(this).find('.over').show();
+		$(this).find('.ty2 h1').stop(true,true).fadeIn();
+	});
+	$( ".main_div > li" ).on("mouseleave", function() {
+		$(this).find('.over').hide();
+		$(this).find('.ty2 h1').stop(true,true).fadeOut();
+	});
 	
 });
 
