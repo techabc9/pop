@@ -33,6 +33,20 @@ var uOverlay = (function() {
 		}
 	};
 	
+	uOverlay.over = function() {
+		var _u_ban_off = document.getElementById('u_ban_off');
+		var _u_ban_on = document.getElementById('u_ban_on');
+		_u_ban_off.style.display = "none";
+		_u_ban_on.style.display = "block";
+	};
+	
+	uOverlay.out = function() {
+		var _u_ban_off = document.getElementById('u_ban_off');
+		var _u_ban_on = document.getElementById('u_ban_on');
+		_u_ban_off.style.display = "block";
+		_u_ban_on.style.display = "none";
+	};
+	
 	return uOverlay;
 })(); 
 

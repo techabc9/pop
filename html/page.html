@@ -12,8 +12,11 @@
 
 <body>
 <script src="../js/u_overlay.js"></script>
-<div class="banner">
-	<a href="#" onclick="uOverlay.show(); return false;">배너 클릭</a>
+<div class="banner" style="position:absolute; top:100px; right:100px">
+	<a href="#" onclick="uOverlay.show(); return false;" onMouseOver="uOverlay.over();" onMouseOut="uOverlay.out();">
+    	<img src="../img/ban_off.png" width="245" height="267" alt="" id="u_ban_off" style="border:0;display:block">
+        <img src="../img/ban_on.png" width="245" height="267" alt="" id="u_ban_on" style="border:0;display:none">
+    </a>
 </div>
 </body>
 </html>
