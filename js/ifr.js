@@ -45,6 +45,11 @@ $(document).ready(function(){
 		$(this).find('.ty2 h1').stop(true,true).fadeOut();
 	});
 	
+	if($(".main_div > li.drag").length > 1){
+	    GnbList.initDrag();
+	}
+	
+	
 });
 
 function set_slide(n){
@@ -78,3 +83,53 @@ function onFocus(el) {
 		$(el).addClass('focusin');
 	}
 }
+
+jQuery.fn.swap = function(b) {
+	b = jQuery(b)[0];
+	var a = this[0];
+	var t = a.parentNode.insertBefore(document.createTextNode(''), a);
+	b.parentNode.insertBefore(a, b);
+	t.parentNode.insertBefore(b, t);
+	t.parentNode.removeChild(t);
+	return this;
+};
+
+var GnbList = (function() {
+	var GnbList = {};
+	var gnb;
+	var gnb_list;
+	var gnb_reset;
+
+	GnbList.initDrag = function() {
+		gnb = $(".main_div");
+		gnb_list = $(".main_div > li.drag");
+		gnb_reset = $(".main_div").html();
+		
+		gnb_list.draggable({
+			revert : true,
+			helper : "clone",
+			addClasses : false,
+			opacity : 0.7
+			//containment : ".u_gnb_area"
+		});
+
+		gnb_list.droppable({
+			accept : ".main_div > li.drag",
+			addClasses : false,
+			//activeClass: "ui-state-hover",
+			hoverClass : "dover",
+			drop : function(event, ui) {
+				var draggable = ui.draggable, droppable = $(this);
+				draggable.swap(droppable);
+				gnb_list.removeClass("dover");
+			}
+		});
+	};
+
+	GnbList.resetDrag = function() {
+		gnb.html(gnb_reset);
+		GnbList.initDrag();
+	};
+
+	return GnbList;
+})(); 
