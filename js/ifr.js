@@ -49,6 +49,16 @@ $(document).ready(function(){
 	    GnbList.initDrag();
 	}
 	
+	$('#infoGraphic').bxSlider({
+		slideSelector:'div.slide_inner',
+		touchEnabled:false,
+		pager:true,
+		nextText:'',
+		prevText:'',
+		adaptiveHeight:true,
+		startSlide:0,
+		mode : 'fade'
+	});
 	
 });
 

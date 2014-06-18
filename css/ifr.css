@@ -100,6 +100,17 @@ body{background:#fff}
 .layer .bx-wrapper a.bx-next { left:189px; background:url(../img/bt_next2.png) no-repeat; }
 .layer .bx-wrapper .bx-controls-direction a { overflow:hidden; position:absolute; display:block; width:47px; height:46px; bottom:20px; text-indent: -9999px; z-index:50; }
 
+.layer .infographic_area .bx-wrapper{ height:auto}
+.layer .infographic_area .bx-wrapper img { width:945px !important}
+.layer .infographic_area  .bx-wrapper .bx-pager { text-align: center; font-size: .85em; font-family: Arial; font-weight: bold; color: #666; position:static; padding:20px 0 10px; bottom:10px; left:0; width:100%; z-index: 60}
+.layer .infographic_area  .bx-wrapper .bx-pager .bx-pager-item{ display: inline-block;  *zoom: 1;*display: inline;}
+.layer .infographic_area  .bx-wrapper .bx-pager.bx-default-pager a { background: #666; text-indent: -9999px; display: block; width: 10px; height: 10px; margin: 0 5px; outline: 0; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+.layer .infographic_area  .bx-wrapper .bx-pager.bx-default-pager a:hover, .layer .infographic_area  .bx-wrapper .bx-pager.bx-default-pager a.active { background: #000; }
+
+.layer .infographic_area .bx-wrapper a.bx-prev { left:20px; background:url(../img/left.png) no-repeat; }
+.layer .infographic_area .bx-wrapper a.bx-next { left:auto; right:20px; background:url(../img/right.png) no-repeat; }
+.layer .infographic_area .bx-wrapper .bx-controls-direction a { overflow:hidden; position:absolute; display:block; width:21px; height:61px; margin-top:-30px; top:50%; bottom:auto; text-indent: -9999px; z-index:60; }
+
 .layer .ly_cont{ overflow: hidden; zoom:1}
 .layer .ly_lft{ float: left; width: 265px; }
 .layer .ly_lft_inner{margin:0 30px 0 20px; height:215px; background:url(../img/bg_tit.gif) no-repeat }
